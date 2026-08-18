@@ -1,0 +1,6 @@
+{
+  "name": "WA Motos",
+  "description": "WA Motos em Carapicuíba: manutenção, revisão, consertos, peças e acessórios para motos. Qualidade, responsabilidade e preço justo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
