@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Local -->
+    <title>WA Motos | Oficina de Motos em Carapicuíba</title>
+    <link rel="canonical" href="https://wamotos.com.br/" />
+    <meta name="description" content="WA Motos em Carapicuíba: manutenção, revisão, consertos, peças e acessórios para motos. Qualidade, responsabilidade e preço justo." />
+    <meta name="theme-color" content="#0a0a0a" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wamotos.com.br/" />
+    <meta property="og:title" content="WA Motos | Oficina de Motos em Carapicuíba" />
+    <meta property="og:description" content="WA Motos em Carapicuíba: manutenção, revisão, consertos, peças e acessórios para motos. Qualidade, responsabilidade e preço justo." />
+    <meta property="og:image" content="https://awmotosteste.pages.dev/img/fachada-logo.jpeg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WA Motos | Oficina de Motos em Carapicuíba" />
+    <meta name="twitter:description" content="WA Motos em Carapicuíba: manutenção, revisão, consertos, peças e acessórios para motos. Qualidade, responsabilidade e preço justo." />
+    <meta name="twitter:image" content="https://awmotosteste.pages.dev/img/fachada-logo.jpeg" />
+
+    <!-- FAVICON REAL DA WA MOTOS -->
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="alternate icon" type="image/jpeg" href="/img/favicon.jpg" />
+
+    <!-- Preconnect para fontes e carregamento do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Dados Estruturados Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MotorcycleRepair",
+      "name": "WA Motos",
+      "description": "WA Motos em Carapicuíba: manutenção, revisão, consertos, peças e acessórios para motos. Qualidade, responsabilidade e preço justo.",
+      "telephone": "+5511971212468",
+      "email": "wamotos951@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Estr. da Gabiroba, 156",
+        "addressLocality": "Carapicuíba",
+        "addressRegion": "SP",
+        "postalCode": "06334-000",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:30",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:30",
+          "closes": "14:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "18"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                red: '#E11D48',
+                dark: '#0a0a0a',
+                card: '#050505',
+                cardAlt: '#18181b',
+                whatsapp: '#25D366'
+              }
+            },
+            fontFamily: {
+              condensed: ['"Barlow Condensed"', 'sans-serif'],
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem; /* Para compensar o header fixo */
+      }
+      
+      /* Oculta barra de rolagem nativa para o carrossel */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE e Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+      /* Estado recolhido da seção de serviços: os três primeiros cards permanecem como resumo. */
+      #services-grid.collapsed > div:nth-child(n+4) {
+        display: none;
+      }
+
+      /* Estilo para focus-visible universal */
+      *:focus-visible {
+        outline: 3px solid #E11D48 !important;
+        outline-offset: 2px !important;
+      }
+    </style>
+  </head>
+  <body class="bg-brand-dark text-zinc-100 font-sans antialiased selection:bg-rose-600 selection:text-white flex flex-col justify-between overflow-x-hidden min-h-screen">
+    
+    <!-- SKIP LINK (Acessibilidade) -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-rose-600 focus:text-white focus:px-4 focus:py-2 focus:rounded focus:z-50 focus:outline-none">
+      Pular para o conteúdo principal
+    </a>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-brand-dark/95 border-b border-zinc-900 backdrop-blur-md transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- LOGO DA MARCA -->
+        <a href="#hero" class="flex items-center gap-3 rounded p-1" aria-label="WA Motos - Ir para o início">
+          <!-- LOGO REAL DA WA MOTOS -->
+          <img src="/img/logo.jpg" alt="WA Motos - Loja de Motopeças e Oficina de Motos em Carapicuíba" width="320" height="96" class="h-12 w-auto object-contain" loading="eager" decoding="async">
+        </a>
+
+        <!-- NAVEGAÇÃO DESKTOP -->
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+          <a href="#hero" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Início</a>
+          <a href="#servicos" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Serviços</a>
+          <a href="#vitrine" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Peças</a>
+          <a href="#sobre" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Sobre Nós</a>
+          <a href="#avaliacoes" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Avaliações</a>
+          <a href="#horarios" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Horários</a>
+          <a href="#localizacao" class="px-3 py-2 text-sm font-semibold rounded text-zinc-400 hover:text-white hover:bg-zinc-900 transition-all">Localização</a>
+          
+          <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="ml-4 px-4 py-2 text-xs font-condensed font-bold tracking-wider uppercase bg-brand-red hover:bg-rose-700 text-white rounded transition-all min-h-[44px] flex items-center justify-center">
+            Falar no WhatsApp
+          </a>
+        </nav>
+
+        <!-- HAMBÚRGUER MOBILE -->
+        <div class="flex md:hidden">
+          <button id="menu-btn" type="button" class="text-zinc-400 hover:text-white p-2 rounded hover:bg-zinc-900 focus:outline-none" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg id="hamburger-icon" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- NAVEGAÇÃO MOBILE -->
+    <nav id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 right-0 z-30 bg-brand-dark border-b border-zinc-900 shadow-xl overflow-hidden transition-all duration-300">
+      <div class="px-3 pt-2 pb-6 space-y-1">
+        <a href="#hero" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Início</a>
+        <a href="#servicos" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Serviços</a>
+        <a href="#vitrine" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Peças e Acessórios</a>
+        <a href="#sobre" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Sobre Nós</a>
+        <a href="#avaliacoes" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Avaliações</a>
+        <a href="#horarios" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Horários</a>
+        <a href="#localizacao" class="mobile-link block px-4 py-3 rounded text-base font-medium text-zinc-300 hover:bg-zinc-900 hover:text-white">Localização</a>
+        
+        <div class="pt-4 px-4">
+          <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-brand-whatsapp hover:bg-green-600 text-white font-condensed font-bold tracking-wider uppercase py-3.5 rounded text-center transition-all min-h-[48px]">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.466L0 24zm6.59-4.846c1.6.95 3.16 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.972 14.113.948 11.49.948c-5.444 0-9.866 4.372-9.87 9.802 0 1.748.474 3.29 1.411 4.716l-.995 3.637 3.733-.967zm12.39-10.428c-.282-.14-.1.43-.801-1.43-.2-.5-1.127-1.105-1.551-1.105-.423 0-.847.21-1.128.524-.282.315-1.072 1.05-1.072 2.556 0 1.507 1.099 2.96 1.24 3.15.14.19 2.164 3.328 5.242 4.66.732.317 1.305.507 1.752.65.735.234 1.405.201 1.933.122.589-.088 1.804-.738 2.059-1.453.254-.715.254-1.328.178-1.453-.076-.125-.282-.195-.563-.336z"/>
+            </svg>
+            Entrar em Contato
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="main" class="flex-grow pt-20">
+      
+      <!-- 1. HERO SECTION -->
+      <section id="hero" class="relative bg-brand-dark overflow-hidden py-16 lg:py-28 flex items-center border-b border-zinc-900">
+        
+        <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+        <div class="absolute inset-0 after:absolute after:inset-0 after:bg-gradient-to-tr after:from-black/30 after:to-transparent">
+          <img src="/img/fachada-logo.jpeg" alt="Fachada oficial da WA Motos - Oficina mecânica de motos e comércio de peças na Estrada da Gabiroba, 156, Carapicuíba" width="800" height="800" class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" decoding="async" />
+          <!-- overlay bg-gradient-to-b from-black/70 via-black/80 to-[#0a0a0a] para garantir contraste do texto -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-[#0a0a0a]"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+          <div class="text-center max-w-3xl mx-auto">
+            
+            <!-- Badge de identificação -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-rose-600/10 border border-rose-600/30 rounded-full mb-6">
+              <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+              <span class="text-xs font-condensed font-bold text-rose-500 uppercase tracking-widest">
+                OFICINA, PEÇAS E ACESSÓRIOS
+              </span>
+            </div>
+
+            <!-- Logo estilizado no Hero -->
+            <div class="flex flex-col items-center justify-center mb-6">
+              <div class="flex flex-col items-center leading-none">
+                <div class="flex items-center gap-3">
+                  <svg class="w-14 h-14" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M10 35 C 15 25, 30 15, 45 15 C 50 15, 60 25, 75 25 C 85 25, 90 15, 95 12" stroke="#E11D48" stroke-width="4.5" stroke-linecap="round" />
+                    <path d="M40 38 L 72 20 L 85 30" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+                    <path d="M15 42 A 12 12 0 0 1 39 42" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
+                    <path d="M60 42 A 12 12 0 0 1 84 42" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
+                  </svg>
+                  <span class="font-condensed font-extrabold text-5xl tracking-tighter italic text-white">
+                    <span class="text-brand-red">WA</span> MOTOS
+                  </span>
+                </div>
+                <span class="text-xs font-condensed font-extrabold tracking-[0.25em] text-brand-red uppercase mt-1">
+                  OFICINA, PEÇAS E ACESSÓRIOS
+                </span>
+              </div>
+            </div>
+
+            <!-- ÚNICO H1 DO SITE -->
+            <h1 class="font-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white mb-6 leading-tight">
+              Oficina de Motos em <span class="text-brand-red">Carapicuíba</span>
+            </h1>
+
+            <!-- SUBTÍTULO -->
+            <p class="text-zinc-300 text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-10 max-w-2xl mx-auto">
+              Manutenção, revisão, peças e acessórios para sua moto, com responsabilidade, qualidade e preço justo.
+            </p>
+
+            <!-- DOIS BOTÕES PRINCIPAIS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0 mb-10">
+              <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-whatsapp hover:bg-green-600 text-white font-condensed font-bold tracking-wider uppercase px-8 py-4 text-base rounded transition-all shadow-xl shadow-green-600/10 min-h-[48px]">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.466L0 24zm6.59-4.846c1.6.95 3.16 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.972 14.113.948 11.49.948c-5.444 0-9.866 4.372-9.87 9.802 0 1.748.474 3.29 1.411 4.716l-.995 3.637 3.733-.967zm12.39-10.428c-.282-.14-.1.43-.801-1.43-.2-.5-1.127-1.105-1.551-1.105-.423 0-.847.21-1.128.524-.282.315-1.072 1.05-1.072 2.556 0 1.507 1.099 2.96 1.24 3.15.14.19 2.164 3.328 5.242 4.66.732.317 1.305.507 1.752.65.735.234 1.405.201 1.933.122.589-.088 1.804-.738 2.059-1.453.254-.715.254-1.328.178-1.453-.076-.125-.282-.195-.563-.336z"/>
+                </svg>
+                FALAR NO WHATSAPP
+              </a>
+              <a href="https://www.google.com/maps/place/WA+Motos/@-23.5445918,-46.8326104,17z/data=!4m15!1m8!3m7!1s0x94cf002dd3436a83:0x4f2ae422cf20f34!2sEstr.+da+Gabiroba,+156+-+Jardim+Santo+Estevao,+Carapicu%C3%ADba+-+SP,+06334-000!3b1!8m2!3d-23.5445918!4d-46.8326104!16s%2Fg%2F11q2nbmtym!3m5!1s0x94cf01db20a605c5:0x3e7cc7c894e7208c!8m2!3d-23.5445918!4d-46.8326104!16s%2Fg%2F11w39yysd6?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-card hover:bg-zinc-850 text-white font-condensed font-bold tracking-wider uppercase px-8 py-4 text-base rounded border border-zinc-800 hover:border-zinc-700 transition-all min-h-[48px]">
+                <svg class="w-5 h-5 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                COMO CHEGAR
+              </a>
+            </div>
+
+            <!-- FAIXA DE CONFIANÇA DISCRETA (Apenas dados reais) -->
+            <p class="text-sm text-zinc-400 font-semibold inline-flex items-center justify-center gap-2">
+              <span class="text-brand-red font-bold">5,0</span>
+              <span class="text-brand-red">★★★★★</span>
+              <span>no Google · 18 avaliações · Carapicuíba – SP</span>
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 2. SERVIÇOS SECTION (9 Cards obrigatórios) -->
+      <section id="servicos" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">Qualidade e Garantia Técnica</span>
+            <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white mb-4">Nossos Serviços</h2>
+            <div class="h-1 w-16 bg-brand-red mx-auto"></div>
+          </div>
+
+          <!-- GRID RESPONSIVO: 1 col mobile / 2 col tablet / 3 col desktop -->
+          <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 collapsed">
+            
+            <!-- Card 1: Alinhamento pneus -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Alinhamento Pneus SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Alinhamento pneus</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Alinhamento preciso dos pneus para estabilidade direcional e segurança nas ruas.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2: Balanceamento rodas -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Balanceamento rodas SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" />
+                    <circle cx="12" cy="12" r="3" />
+                    <path stroke-linecap="round" d="M12 3v6m0 6v6M3 12h6m6 0h6" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Balanceamento rodas</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Eliminação de vibrações nas rodas para um rodar suave e maior vida útil dos pneus.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Bateria -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Bateria SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="6" width="18" height="12" rx="2" />
+                    <path d="M7 6V4h2v2M15 6V4h2v2M7 11h2m6 0h2m-1 0v2m-7-2v-2" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Bateria</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Testes de carga, diagnóstico elétrico completo e substituição de baterias de alta qualidade.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Conserto freio -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Conserto freio SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="8" stroke="currentColor" />
+                    <path stroke-linecap="round" d="M12 8v8M8 12h8" />
+                    <path stroke-linecap="round" d="M4 12 a 8 8 0 0 1 16 0" stroke-width="3" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Conserto freio</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Manutenção e troca de pastilhas, discos, fluidos e ajuste para uma frenagem 100% segura.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5: Injeção eletrônica -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Injeção eletrônica SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Injeção eletrônica</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Diagnóstico eletrônico computadorizado, limpeza de bicos e ajuste de sensores do motor.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 6: Reparo suspensão/direção -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Reparo suspensão/direção SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M9 7h6M9 17h6" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Reparo suspensão/direção</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Substituição de retentores, troca de óleo de bengala e manutenção da caixa de direção.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 7: Reparo elétrico -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Reparo elétrico SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Reparo elétrico</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Diagnóstico de curto-circuito, reparos em chicotes, estator, motor de partida, setas e painel.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 8: Troca óleo -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Troca óleo SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.656 48.656 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3M3 12c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M3 12l-3 3m3-3l3 3" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Troca óleo</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Substituição rápida e correta de óleo de motor e filtros, segundo as especificações do fabricante.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 9: Revisão -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 hover:border-rose-900/40 hover:scale-[1.02] hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-5 text-brand-red">
+                  <!-- Revisão SVG -->
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.67 2.67 0 1113.5 17.25l-5.83-5.83m4.23-1.42a2.67 2.67 0 11-3.78-3.78M18 12a6 6 0 11-12 0 6 6 0 0112 0z" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-xl uppercase text-white mb-3 tracking-wide">Revisão</h3>
+                <p class="text-zinc-400 text-sm leading-relaxed mb-6">Inspeção geral minuciosa, lubrificação, aperto, regulagem fina de cabos, correntes e parafusos.</p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="text-xs font-condensed font-bold tracking-wider text-brand-red hover:text-rose-400 uppercase inline-flex items-center gap-1.5">
+                  Consulte valores pelo WhatsApp &rarr;
+                </a>
+              </div>
+            </div>
+
+                    </div>
+          <div class="flex justify-center mb-16">
+            <button id="services-toggle" type="button" class="inline-flex items-center justify-center gap-2 border border-brand-red/60 text-brand-red hover:bg-brand-red hover:text-white font-condensed font-bold tracking-wider uppercase px-6 py-3 rounded transition-all min-h-[48px]" aria-expanded="false" aria-controls="services-grid">
+              <span>Ver todos os serviços</span>
+              <svg id="services-toggle-icon" class="w-5 h-5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
+          <!-- CTA inferior -->
+          <div class="bg-[#050505] border border-zinc-900 rounded p-8 md:p-10 text-center max-w-3xl mx-auto">
+            <h3 class="font-condensed font-bold text-2xl uppercase tracking-wide text-white mb-4">
+              Precisa de manutenção na sua moto?
+            </h3>
+            <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-8 max-w-xl mx-auto">
+              Seja uma troca de óleo rápida ou uma revisão detalhada para viagem, cuidamos da integridade do seu veículo com dedicação completa.
+            </p>
+            <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-brand-red hover:bg-rose-700 text-white font-condensed font-bold tracking-wider uppercase px-8 py-3.5 rounded text-sm transition-all min-h-[48px]">
+              FALAR COM A WA MOTOS
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 3. VITRINE DE PEÇAS (Scroll-snap NATIVO) -->
+      <section id="vitrine" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="mb-12">
+            <div class="max-w-xl">
+              <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">Linha de Desgaste Rápido</span>
+              <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white mb-4">Peças e Acessórios</h2>
+              <div class="h-1 w-16 bg-brand-red mb-4"></div>
+              <p class="text-zinc-400 text-sm leading-relaxed">
+                Trabalhamos com componentes essenciais de reposição preventiva de alta durabilidade para sua segurança.
+              </p>
+            </div>
+          </div>
+
+          <!-- Banner acima do carrossel -->
+          <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+          <div class="mb-12 rounded-lg border border-zinc-900 overflow-hidden">
+            <img src="/img/balcao-pecas.jpeg" alt="Estoque de motopeças originais e acessórios para motocicletas em Carapicuíba - WA Motos" width="1280" height="720" class="w-full object-cover aspect-[4/3] md:aspect-video" loading="lazy" decoding="async" />
+          </div>
+
+          <!-- Botões manuais de navegação (abaixo da imagem do balcão e acima de Óleo, Cabos, etc.) -->
+          <div class="flex justify-center md:justify-end gap-3 mb-6">
+            <button id="slider-prev" type="button" class="w-12 h-12 rounded bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700 flex items-center justify-center transition-all cursor-pointer focus:outline-none" aria-label="Item anterior">
+              &larr;
+            </button>
+            <button id="slider-next" type="button" class="w-12 h-12 rounded bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700 flex items-center justify-center transition-all cursor-pointer focus:outline-none" aria-label="Próximo item">
+              &rarr;
+            </button>
+          </div>
+
+          <!-- CAROUSEL HORIZONTAL DE PEÇAS (6 itens obrigatórios) -->
+          <div class="relative">
+            <div id="vitrine-scroll" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-6 pb-6 px-1 scroll-smooth" style="-webkit-overflow-scrolling: touch;">
+              
+              <!-- Card 1: Óleo -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-[320px] bg-brand-card rounded border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <!-- FOTO REAL DO PRODUTO — para trocar, substitua o src mantendo o alt -->
+                  <img src="/img/oleo-castrol-20w50.jpeg" alt="Óleo Castrol 20W50 para motocicletas na WA Motos" width="320" height="240" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+                </div>
+                                <div class="p-6">
+                  <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">Óleo para motos</h3>
+                  <p class="text-zinc-400 text-sm leading-relaxed mb-4">Produtos para manutenção e troca de óleo.</p>
+                  <button id="oil-toggle" type="button" class="inline-flex items-center justify-center gap-2 border border-brand-red/60 text-brand-red hover:bg-brand-red hover:text-white font-condensed font-bold tracking-wider uppercase px-4 py-2 rounded transition-all text-sm min-h-[44px]" aria-expanded="false" aria-controls="other-oils">
+                    <span>Ver outros óleos</span>
+                    <svg id="oil-toggle-icon" class="w-4 h-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </button>
+                  <div id="other-oils" class="hidden mt-5 pt-5 border-t border-zinc-800" aria-hidden="true">
+                    <p class="text-zinc-500 text-xs uppercase tracking-wider mb-3">Outras opções disponíveis</p>
+                    <div class="grid grid-cols-3 gap-2">
+                      <div class="min-w-0"><img src="/img/oleo-ipiranga-20w50.jpeg" alt="Óleo Ipiranga 20W50 para motocicletas" width="160" height="120" class="w-full aspect-[4/3] object-cover rounded border border-zinc-800" loading="lazy" decoding="async"><p class="text-zinc-400 text-[11px] mt-1 leading-tight">Ipiranga 20W50</p></div>
+                      <div class="min-w-0"><img src="/img/oleo-mbil-20w50.jpeg" alt="Óleo Mobil 20W50 para motocicletas" width="160" height="120" class="w-full aspect-[4/3] object-cover rounded border border-zinc-800" loading="lazy" decoding="async"><p class="text-zinc-400 text-[11px] mt-1 leading-tight">Mobil 20W50</p></div>
+                      <div class="min-w-0"><img src="/img/oleo-mobil-10w30.jpeg" alt="Óleo Mobil 10W30 para motocicletas" width="160" height="120" class="w-full aspect-[4/3] object-cover rounded border border-zinc-800" loading="lazy" decoding="async"><p class="text-zinc-400 text-[11px] mt-1 leading-tight">Mobil 10W30</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2: Cabos -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-[320px] bg-brand-card rounded border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <img src="/img/amostra-pecas-cabos.jpg" alt="Cabos de comando acelerador e embreagem para motocicletas em Carapicuíba - WA Motos" width="320" height="240" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">Cabos</h3>
+                  <p class="text-zinc-400 text-sm leading-relaxed mb-4">Cabos reforçados de alta resistência para comandos e acionamentos rápidos.</p>
+                </div>
+              </div>
+
+              <!-- Card 3: Pneus -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-[320px] bg-brand-card rounded border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+                  <img src="/img/pneu-moto.jpg" alt="Venda e troca de pneus de moto em Carapicuíba - Modelos premium na WA Motos" width="320" height="240" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">Pneus</h3>
+                  <p class="text-zinc-400 text-sm leading-relaxed mb-4">Opções para diferentes necessidades de uso.</p>
+                </div>
+              </div>
+
+              <!-- Card 4: Kit relação -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-[320px] bg-brand-card rounded border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <img src="/img/amostra-pecas-relacao.jpg" alt="Kit relação e coroa de transmissão para motocicletas em Carapicuíba - Peças WA Motos" width="320" height="240" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">Kit relação</h3>
+                  <p class="text-zinc-400 text-sm leading-relaxed mb-4">Componentes para transmissão da motocicleta.</p>
+                </div>
+              </div>
+
+              <!-- Card 5: Componentes de freio -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-[320px] bg-brand-card rounded border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <img src="/img/amostra-pecas-freio.jpg" alt="Manutenção de freios e troca de pastilhas de moto em Carapicuíba - WA Motos" width="320" height="240" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">Componentes de freio</h3>
+                  <p class="text-zinc-400 text-sm leading-relaxed mb-4">Pastilhas de freio e componentes de atrito com excelente capacidade de frenagem.</p>
+                </div>
+              </div>
+
+              <!-- Card 6: Baterias -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-[320px] bg-brand-card rounded border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative aspect-[4/3] bg-zinc-900 overflow-hidden flex items-center justify-center">
+                  <img src="/img/amostra-pecas-bateria.jpg" alt="Baterias de alta qualidade para motocicletas em Carapicuíba - WA Motos" width="320" height="240" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                  <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">Baterias</h3>
+                  <p class="text-zinc-400 text-sm leading-relaxed mb-4">Produtos para alimentação elétrica da motocicleta.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CTA Final da Vitrine -->
+          <div class="mt-12 text-center">
+            <p class="text-zinc-400 text-sm mb-6">
+              Consulte disponibilidade e valores pelo WhatsApp.
+            </p>
+            <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20consultar%20a%20disponibilidade%20e%20o%20valor%20de%20uma%20pe%C3%A7a." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-brand-red hover:bg-rose-700 text-white font-condensed font-bold tracking-wider uppercase px-8 py-3.5 rounded text-sm transition-all min-h-[48px]">
+              CONSULTAR PEÇAS
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 4. SOBRE A WA MOTOS -->
+      <section id="sobre" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Coluna da Foto da Oficina -->
+            <div class="lg:col-span-5">
+              <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+              <div class="rounded-lg border border-zinc-900 overflow-hidden">
+                <img src="/img/oficina-interna.jpeg" alt="Mecânico trabalhando na manutenção de motos na oficina especializada WA Motos em Carapicuíba" width="800" height="600" class="w-full object-cover aspect-[4/3] md:aspect-video" loading="lazy" decoding="async" />
+              </div>
+            </div>
+
+            <!-- Bloco de Texto Sobre Nós -->
+            <div class="lg:col-span-7">
+              <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">QUEM SOMOS</span>
+              <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white mb-6">Sobre a WA Motos</h2>
+              <div class="h-1 w-16 bg-brand-red mb-6"></div>
+              
+              <div class="text-zinc-300 font-sans text-base sm:text-lg leading-relaxed space-y-6">
+                <p>
+                  Na <strong>WA Motos</strong>, cuidamos da sua moto com responsabilidade, qualidade e preço justo. Trabalhamos com manutenção, revisões, consertos e venda de autopeças, sempre com atendimento honesto e transparente.
+                </p>
+                <p class="text-zinc-400 text-sm sm:text-base">
+                  Nossa oficina de bairro foi estruturada para oferecer soluções mecânicas rápidas e confiáveis. Entendemos a importância que sua moto tem no seu dia a dia profissional e pessoal. Por isso, oferecemos um suporte focado e de alta qualidade técnica que você pode confiar.
+                </p>
+              </div>
+
+              <!-- Pilares fundamentais (Dados reais) -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+                <div class="p-4 bg-brand-card rounded border border-zinc-900">
+                  <span class="text-brand-red font-condensed font-bold text-lg block mb-1">TRANSPARÊNCIA</span>
+                  <p class="text-zinc-400 text-xs">Explicamos o diagnóstico de maneira honesta antes de realizar o reparo.</p>
+                </div>
+                <div class="p-4 bg-brand-card rounded border border-zinc-900">
+                  <span class="text-brand-red font-condensed font-bold text-lg block mb-1">QUALIDADE</span>
+                  <p class="text-zinc-400 text-xs">Utilizamos peças e técnicas de reposição confiáveis e recomendadas.</p>
+                </div>
+                <div class="p-4 bg-brand-card rounded border border-zinc-900">
+                  <span class="text-brand-red font-condensed font-bold text-lg block mb-1">RESPONSABILIDADE</span>
+                  <p class="text-zinc-400 text-xs">Cada detalhe mecânico é verificado para garantir sua total segurança nas ruas.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 5. AVALIAÇÕES SECTION (Exatamente 3 - Não invente mais) -->
+      <section id="avaliacoes" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">Opinião de Quem Confia</span>
+            <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight text-white mb-4">Avaliações dos nossos clientes</h2>
+            <div class="h-1 w-16 bg-brand-red mx-auto mb-6"></div>
+            
+            <!-- Badge Google -->
+            <div class="inline-flex items-center gap-3 px-4 py-2 bg-zinc-900 border border-zinc-800 rounded">
+              <span class="font-condensed font-extrabold text-3xl text-white">5,0</span>
+              <span class="text-brand-red text-xl">★★★★★</span>
+              <span class="text-zinc-400 text-sm">no Google (18 avaliações)</span>
+            </div>
+          </div>
+
+          <!-- Exatamente as 3 avaliações fornecidas -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Avaliação 1 -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 flex flex-col justify-between">
+              <div>
+                <div class="text-brand-red text-lg mb-4" aria-hidden="true">★★★★★</div>
+                <p class="text-zinc-300 text-sm sm:text-base italic leading-relaxed mb-6">
+                  &ldquo;A melhor oficina, as meninas na recepção são super simpáticas, tiram dúvidas.&rdquo;
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900/60 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center font-condensed font-bold text-brand-red text-sm">C</div>
+                <div>
+                  <h4 class="font-sans font-semibold text-xs text-white">Cliente do Google</h4>
+                  <span class="text-[10px] text-zinc-500 uppercase tracking-wide">Avaliação Oficial</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Avaliação 2 -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 flex flex-col justify-between">
+              <div>
+                <div class="text-brand-red text-lg mb-4" aria-hidden="true">★★★★★</div>
+                <p class="text-zinc-300 text-sm sm:text-base italic leading-relaxed mb-6">
+                  &ldquo;Excelentes profissionais / preço justo / serviço de qualidade.&rdquo;
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900/60 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center font-condensed font-bold text-brand-red text-sm">C</div>
+                <div>
+                  <h4 class="font-sans font-semibold text-xs text-white">Cliente do Google</h4>
+                  <span class="text-[10px] text-zinc-500 uppercase tracking-wide">Avaliação Oficial</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Avaliação 3 -->
+            <div class="bg-brand-card p-6 rounded border border-zinc-900 flex flex-col justify-between">
+              <div>
+                <div class="text-brand-red text-lg mb-4" aria-hidden="true">★★★★★</div>
+                <p class="text-zinc-300 text-sm sm:text-base italic leading-relaxed mb-6">
+                  &ldquo;Mecânicos ótimos profissionais e verdadeiros sinceros, ótima oficina.&rdquo;
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-900/60 flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center font-condensed font-bold text-brand-red text-sm">C</div>
+                <div>
+                  <h4 class="font-sans font-semibold text-xs text-white">Cliente do Google</h4>
+                  <span class="text-[10px] text-zinc-500 uppercase tracking-wide">Avaliação Oficial</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 6. HORÁRIO DE FUNCIONAMENTO -->
+      <section id="horarios" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+          
+          <div class="text-center mb-12">
+            <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">PLANEJE SUA VISITA</span>
+            <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-4">Horário de funcionamento</h2>
+            <div class="h-1 w-16 bg-brand-red mx-auto"></div>
+          </div>
+
+          <!-- Tabela de Horários Legível -->
+          <div class="bg-brand-card border border-zinc-900 rounded overflow-hidden">
+            <div class="p-4 bg-zinc-900/60 border-b border-zinc-900 flex items-center gap-3 px-6">
+              <svg class="w-5 h-5 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="font-condensed font-bold text-white uppercase tracking-wider text-sm">Quadro de Horários</span>
+            </div>
+            
+            <div class="divide-y divide-zinc-900 px-6 py-2">
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Segunda-feira</span>
+                <span class="text-white font-condensed font-bold tracking-wide">08:30–19:00</span>
+              </div>
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Terça-feira</span>
+                <span class="text-white font-condensed font-bold tracking-wide">08:30–19:00</span>
+              </div>
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Quarta-feira</span>
+                <span class="text-white font-condensed font-bold tracking-wide">08:30–19:00</span>
+              </div>
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Quinta-feira</span>
+                <span class="text-white font-condensed font-bold tracking-wide">08:30–19:00</span>
+              </div>
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Sexta-feira</span>
+                <span class="text-white font-condensed font-bold tracking-wide">08:30–19:00</span>
+              </div>
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Sábado</span>
+                <span class="text-white font-condensed font-bold tracking-wide">08:30–14:00</span>
+              </div>
+              <div class="py-3 flex justify-between items-center text-sm sm:text-base">
+                <span class="text-zinc-300 font-medium">Domingo</span>
+                <span class="text-brand-red bg-rose-950/20 border border-rose-900/30 px-2.5 py-0.5 rounded text-xs font-condensed font-bold uppercase tracking-wider">Fechado</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 6.5. GALERIA NOSSO ESPAÇO -->
+      <section id="galeria" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">Conheça nossa estrutura</span>
+            <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-4">Nosso Espaço</h2>
+            <div class="h-1 w-16 bg-brand-red mx-auto"></div>
+          </div>
+
+          <div class="relative">
+            <!-- Scroll-snap nativo para os cards -->
+            <div id="galeria-scroll" class="flex md:grid md:grid-cols-2 overflow-x-auto snap-x snap-mandatory no-scrollbar gap-6 pb-6 px-1 scroll-smooth" style="-webkit-overflow-scrolling: touch;">
+              
+              <!-- Card 1: Oficina Motos -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-auto md:w-full bg-brand-card rounded-lg border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative overflow-hidden">
+                  <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+                  <img src="/img/oficina-motos.jpeg" alt="Motos em atendimento e manutenção geral na oficina de motocicletas WA Motos em Carapicuíba" width="800" height="600" class="w-full object-cover aspect-[4/3] md:aspect-video" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 bg-[#050505] border-t border-zinc-900">
+                  <p class="text-zinc-400 text-sm font-sans">Pátio interno com motos em atendimento</p>
+                </div>
+              </div>
+
+              <!-- Card 2: Balcão Peças -->
+              <div class="snap-start shrink-0 w-[280px] sm:w-auto md:w-full bg-brand-card rounded-lg border border-zinc-900 overflow-hidden flex flex-col justify-between">
+                <div class="relative overflow-hidden">
+                  <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+                  <img src="/img/balcao-pecas.jpeg" alt="Amplo estoque de peças e reposição para conserto de motos em Carapicuíba na WA Motos" width="800" height="600" class="w-full object-cover aspect-[4/3] md:aspect-video" loading="lazy" decoding="async" />
+                </div>
+                <div class="p-4 bg-[#050505] border-t border-zinc-900">
+                  <p class="text-zinc-400 text-sm font-sans">Estoque de peças e acessórios à pronta entrega</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 7. LOCALIZAÇÃO -->
+      <section id="localizacao" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center mb-12">
+            <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">ROTA DIRETA</span>
+            <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-4">Venha nos visitar</h2>
+            <div class="h-1 w-16 bg-brand-red mx-auto"></div>
+          </div>
+
+          <!-- Layout lado a lado no desktop -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Card de endereço (Coluna da esquerda) -->
+            <div class="lg:col-span-6 bg-brand-card border border-zinc-900 rounded-lg p-8 md:p-10 text-center lg:text-left shadow-lg flex flex-col items-center lg:items-start justify-between min-h-full">
+              <div>
+                <div class="w-12 h-12 rounded bg-rose-600/5 border border-rose-600/20 flex items-center justify-center mb-6 text-brand-red mx-auto lg:mx-0">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                </div>
+
+                <h3 class="font-condensed font-bold text-2xl uppercase text-white mb-3 tracking-wide">Estrada da Gabiroba, 156</h3>
+                
+                <div class="text-zinc-300 font-sans text-base leading-relaxed mb-8 space-y-1">
+                  <p>Jardim Santo Estevão</p>
+                  <p>Carapicuíba - SP</p>
+                  <p class="text-xs text-zinc-500">CEP 06334-000</p>
+                </div>
+              </div>
+
+              <div class="w-full mt-auto">
+                <a href="https://www.google.com/maps/place/WA+Motos/@-23.5445918,-46.8326104,17z/data=!4m15!1m8!3m7!1s0x94cf002dd3436a83:0x4f2ae422cf20f34!2sEstr.+da+Gabiroba,+156+-+Jardim+Santo+Estevao,+Carapicu%C3%ADba+-+SP,+06334-000!3b1!8m2!3d-23.5445918!4d-46.8326104!16s%2Fg%2F11q2nbmtym!3m5!1s0x94cf01db20a605c5:0x3e7cc7c894e7208c!8m2!3d-23.5445918!4d-46.8326104!16s%2Fg%2F11w39yysd6?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-brand-red hover:bg-rose-700 text-white font-condensed font-bold tracking-wider uppercase px-8 py-4 text-base rounded transition-all shadow-xl shadow-rose-600/10 min-h-[48px]">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  COMO CHEGAR (GOOGLE MAPS)
+                </a>
+
+                <p class="text-zinc-500 text-xs mt-6 leading-relaxed text-center lg:text-left">
+                  Clique no botão para traçar sua rota e dirigir diretamente para a nossa oficina usando o Waze ou o Google Maps.
+                </p>
+              </div>
+            </div>
+
+            <!-- Imagem da Fachada com Logo (Coluna da direita) -->
+            <div class="lg:col-span-6 flex items-stretch">
+              <!-- FOTO REAL DA OFICINA — para trocar, substitua o src mantendo o alt -->
+              <div class="rounded-lg border border-zinc-900 overflow-hidden w-full h-full min-h-[350px]">
+                <img src="/img/fachada-logo.jpeg" alt="Fachada da loja WA Motos com placa de identificação, serviços e contatos de motopeças e mecânica em Carapicuíba" width="800" height="600" class="w-full h-full object-cover aspect-[4/3] md:aspect-video lg:aspect-square" loading="lazy" decoding="async" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 8. CONTATO SECTION -->
+      <section id="contato" class="py-20 bg-brand-dark border-b border-zinc-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+          
+          <div class="text-center mb-16">
+            <span class="text-brand-red font-condensed font-bold text-sm tracking-widest uppercase block mb-2">FALE AGORA</span>
+            <h2 class="font-condensed font-extrabold text-3xl sm:text-4xl uppercase tracking-tight text-white mb-4">Fale com a WA Motos</h2>
+            <div class="h-1 w-16 bg-brand-red mx-auto"></div>
+          </div>
+
+          <!-- GRID DE CONTATOS (Sem formulários) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <!-- WhatsApp -->
+            <div class="bg-brand-card border border-zinc-900 p-6 rounded text-center flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded bg-[#25D366]/10 text-brand-whatsapp flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.466L0 24zm6.59-4.846c1.6.95 3.16 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.972 14.113.948 11.49.948c-5.444 0-9.866 4.372-9.87 9.802 0 1.748.474 3.29 1.411 4.716l-.995 3.637 3.733-.967zm12.39-10.428c-.282-.14-.1.43-.801-1.43-.2-.5-1.127-1.105-1.551-1.105-.423 0-.847.21-1.128.524-.282.315-1.072 1.05-1.072 2.556 0 1.507 1.099 2.96 1.24 3.15.14.19 2.164 3.328 5.242 4.66.732.317 1.305.507 1.752.65.735.234 1.405.201 1.933.122.589-.088 1.804-.738 2.059-1.453.254-.715.254-1.328.178-1.453-.076-.125-.282-.195-.563-.336z"/>
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">WhatsApp</h3>
+                <p class="text-zinc-400 text-sm font-sans mb-6">Atendimento rápido, orçamentos mecânicos e informações gerais.</p>
+              </div>
+              <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="font-condensed font-bold text-brand-red hover:text-rose-400 tracking-wider text-base uppercase block mt-auto">
+                (11) 97121-2468
+              </a>
+            </div>
+
+            <!-- E-mail -->
+            <div class="bg-brand-card border border-zinc-900 p-6 rounded text-center flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded bg-rose-600/10 text-brand-red flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                </div>
+                <h3 class="font-condensed font-bold text-lg uppercase text-white mb-2 tracking-wide">E-mail</h3>
+                <p class="text-zinc-400 text-sm font-sans mb-6">Fale conosco por mensagem de e-mail para contatos comerciais.</p>
+              </div>
+              <a href="mailto:wamotos951@gmail.com" class="font-condensed font-bold text-brand-red hover:text-rose-400 tracking-wider text-sm uppercase block mt-auto truncate rounded p-1">
+                wamotos951@gmail.com
+              </a>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 9. FLOATING WHATSAPP BUTTON (Acessibilidade + Sempre disponível) -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-brand-whatsapp hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-2xl transition-all group min-h-[48px]" aria-label="Falar no WhatsApp">
+        <svg class="w-6 h-6 shrink-0 group-hover:rotate-12 transition-transform" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.466L0 24zm6.59-4.846c1.6.95 3.16 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.59 1.972 14.113.948 11.49.948c-5.444 0-9.866 4.372-9.87 9.802 0 1.748.474 3.29 1.411 4.716l-.995 3.637 3.733-.967zm12.39-10.428c-.282-.14-.1.43-.801-1.43-.2-.5-1.127-1.105-1.551-1.105-.423 0-.847.21-1.128.524-.282.315-1.072 1.05-1.072 2.556 0 1.507 1.099 2.96 1.24 3.15.14.19 2.164 3.328 5.242 4.66.732.317 1.305.507 1.752.65.735.234 1.405.201 1.933.122.589-.088 1.804-.738 2.059-1.453.254-.715.254-1.328.178-1.453-.076-.125-.282-.195-.563-.336z"/>
+        </svg>
+        <span class="font-condensed font-extrabold uppercase tracking-wider text-sm hidden sm:inline pr-1">Falar no WhatsApp</span>
+        <span class="font-condensed font-extrabold uppercase tracking-wider text-sm inline sm:hidden pr-1">WhatsApp</span>
+      </a>
+    </div>
+
+
+    <!-- 10. RODAPÉ COMPACTO (Máximo 3 colunas) -->
+    <footer class="bg-brand-dark border-t border-zinc-900 pt-12 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          
+          <!-- Coluna 1: Institucional -->
+          <div>
+            <div class="flex flex-col items-start leading-none mb-4">
+              <div class="flex items-center gap-2">
+                <svg class="w-6 h-6" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M10 35 C 15 25, 30 15, 45 15 C 50 15, 60 25, 75 25 C 85 25, 90 15, 95 12" stroke="#E11D48" stroke-width="4" stroke-linecap="round" />
+                  <path d="M40 38 L 72 20 L 85 30" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+                  <path d="M15 42 A 12 12 0 0 1 39 42" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+                  <path d="M60 42 A 12 12 0 0 1 84 42" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+                </svg>
+                <span class="font-condensed font-extrabold text-xl tracking-tighter italic text-white">
+                  <span class="text-brand-red">WA</span> MOTOS
+                </span>
+              </div>
+              <span class="text-[8px] font-condensed font-bold tracking-[0.2em] text-brand-red uppercase mt-0.5">
+                OFICINA, PEÇAS E ACESSÓRIOS
+              </span>
+            </div>
+            <p class="text-zinc-500 text-xs sm:text-sm leading-relaxed max-w-xs mt-3">
+              Cuidamos da sua moto com responsabilidade, qualidade e preço justo. Atendimento honesto e transparente para Carapicuíba e região.
+            </p>
+          </div>
+
+          <!-- Coluna 2: Contato -->
+          <div class="text-xs sm:text-sm">
+            <h4 class="font-condensed font-bold text-white uppercase tracking-widest mb-3">Contato</h4>
+            <ul class="space-y-2 text-zinc-400">
+              <li>Estr. da Gabiroba, 156 · Jardim Santo Estevão</li>
+              <li>Carapicuíba - SP · CEP 06334-000</li>
+              <li class="pt-1">
+                <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="hover:text-brand-red transition-all">WhatsApp: (11) 97121-2468</a>
+              </li>
+              <li>
+                <a href="mailto:wamotos951@gmail.com" class="hover:text-brand-red transition-all">E-mail: wamotos951@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Horários -->
+          <div class="text-xs sm:text-sm">
+            <h4 class="font-condensed font-bold text-white uppercase tracking-widest mb-3">Horários</h4>
+            <ul class="space-y-1 text-zinc-400">
+              <li>Segunda a Sexta: <span class="text-white font-semibold">08:30–19:00</span></li>
+              <li>Sábado: <span class="text-white font-semibold">08:30–14:00</span></li>
+              <li>Domingo: <span class="text-brand-red font-semibold">Fechado</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="border-t border-zinc-900 pt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-[11px] text-zinc-500">
+          <p>
+            &copy; 2026 WA Motos. Todos os direitos reservados.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="https://wa.me/5511971212468?text=Ol%C3%A1%2C%20WA%20Motos!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20oficina." target="_blank" rel="noopener noreferrer" class="hover:text-brand-red transition-colors">WhatsApp</a>
+            <a href="mailto:wamotos951@gmail.com" class="hover:text-brand-red transition-colors">E-mail</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- INTERAÇÕES LIGHTWEIGHT VIA JS VANILLA (Sob medida, sem dependências, < 25 linhas) -->
+    <script>
+      // Menu hambúrguer
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      function toggleMenu() {
+        const isOpen = mobileMenu.classList.contains('hidden');
+        if (isOpen) {
+          mobileMenu.classList.remove('hidden');
+          hamburgerIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+          menuBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
+
+      menuBtn.addEventListener('click', toggleMenu);
+      mobileLinks.forEach(link => link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }));
+
+      // Expansão progressiva dos serviços: mantém a vitrine de peças mais próxima no celular.
+      const servicesGrid = document.getElementById('services-grid');
+      const servicesToggle = document.getElementById('services-toggle');
+      const servicesToggleIcon = document.getElementById('services-toggle-icon');
+      if (servicesGrid && servicesToggle && servicesToggleIcon) {
+        servicesToggle.addEventListener('click', () => {
+          const expanded = servicesGrid.classList.toggle('collapsed') === false;
+          servicesToggle.setAttribute('aria-expanded', String(expanded));
+          servicesToggle.querySelector('span').textContent = expanded ? 'Mostrar menos' : 'Ver todos os serviços';
+          servicesToggleIcon.classList.toggle('rotate-180', expanded);
+        });
+      }
+      // Expansão das opções de óleo dentro do primeiro card da vitrine.
+      const oilToggle = document.getElementById('oil-toggle');
+      const otherOils = document.getElementById('other-oils');
+      const oilToggleIcon = document.getElementById('oil-toggle-icon');
+      if (oilToggle && otherOils && oilToggleIcon) {
+        oilToggle.addEventListener('click', () => {
+          const expanded = otherOils.classList.toggle('hidden') === false;
+          oilToggle.setAttribute('aria-expanded', String(expanded));
+          otherOils.setAttribute('aria-hidden', String(!expanded));
+          oilToggle.querySelector('span').textContent = expanded ? 'Ocultar outros óleos' : 'Ver outros óleos';
+          oilToggleIcon.classList.toggle('rotate-180', expanded);
+        });
+      }
+      // Deslocamento da vitrine horizontal no desktop
+      const vitrineScroll = document.getElementById('vitrine-scroll');
+      const sliderPrev = document.getElementById('slider-prev');
+      const sliderNext = document.getElementById('slider-next');
+
+      if (sliderPrev && sliderNext && vitrineScroll) {
+        const scrollOffset = 340;
+        sliderPrev.addEventListener('click', () => {
+          vitrineScroll.scrollBy({ left: -scrollOffset, behavior: 'smooth' });
+        });
+        sliderNext.addEventListener('click', () => {
+          vitrineScroll.scrollBy({ left: scrollOffset, behavior: 'smooth' });
+        });
+      }
+    </script>
+  </body>
+</html>
